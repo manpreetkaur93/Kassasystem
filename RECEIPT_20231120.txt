@@ -5,3 +5,26 @@ Ekologiska Bananer	3	12	styck
 Pris för 3 st: 36 kr
 Totalt: 66 kr
 
+RECEIPT 1 - 2023-11-20 13:46:05
+Pasta	5	12	förpackning
+Pris för 5 st: 60 kr
+Totalt: 60 kr
+
+RECEIPT 1 - 2023-11-20 13:54:58
+Totalt: 0 kr
+
+RECEIPT 1 - 2023-11-20 13:56:38
+Totalt: 0 kr
+
+RECEIPT 1 - 2023-11-20 14:06:35
+Bananer	6	10	styck
+Pris för 6 st: 60 kr
+Totalt: 60 kr
+
+RECEIPT 1 - 2023-11-20 14:46:53
+Köttfärs	6	50	förpackning
+Pris för 6 st: 300 kr
+Bananer	5	10	styck
+Pris för 5 st: 50 kr
+Totalt: 350 kr
+

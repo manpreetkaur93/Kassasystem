@@ -29,7 +29,7 @@ class Kassa:
 
     def ny_kund(self):
          # Metod för att börja en ny kundsession genom att återställa försäljningslistan
-        self.forsaljning = []
+        self.forsaljning = [] 
 
     def lagg_till_produkt(self, produkt, antal):
         # Metod för att lägga till en viss mängd av en produkt i försäljningslistan
@@ -134,23 +134,24 @@ while True:
         kassa.ny_kund()
         while True:
            try:
-                produkt_id = input("Ange produktid (0 för att avsluta köp, 'pay' för att betala): ")
-                if produkt_id == "0":
-                    break
-                elif produkt_id.lower() == "pay":
-                    kassa.betala()
-                    print("Klart! Kvitto sparades!")
-                    break
-
-                antal = input("Ange antal: ")
-
-                produkt = next((p for p in admin.produkter if p.produktid == produkt_id), None)
-                if produkt:
-                    kassa.lagg_till_produkt(produkt, antal)
-                else:
-                    print("Produkt {} finns inte.".format(produkt_id))
-           except ValueError:
-                print("Ogiltig inmatning. Ange ett numeriskt värde för antal.")
+             input_line = input("Ange produktid och antal (0 för att avsluta köp, 'pay' för att betala): ")
+             inputs = input_line.split() #denna kommer att splita inputs i listan
+        
+             if inputs[0] == "0":
+              break
+             elif inputs[0].lower() == "pay":
+              kassa.betala()
+              print("Klart! Kvitto sparades")
+              break
+             produkt_id, antal = inputs[0], inputs[1]  # ändrade funktionen till detta så att två inputs kan tas emot
+             produkt = next((p for p in admin.produkter if p.produktid == produkt_id), None)
+             if produkt:
+              kassa.lagg_till_produkt(produkt, antal)
+              print(f"<{produkt_id}> <{antal}>")
+             else:
+               print("Produkt {} finns inte.".format(produkt_id))
+           except (ValueError, IndexError):
+                    print("Ogiltig inmatning. Ange både produktid och antal.")
 
         #kassa.betala()
         #print(f"Kvitto sparades i filen: kvitto.txt")

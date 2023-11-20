@@ -1,0 +1,7 @@
+RECEIPT 1 - 2023-11-20 13:11:21
+Mjölk	2	15	förpackning
+Pris för 2 st: 30 kr
+Ekologiska Bananer	3	12	styck
+Pris för 3 st: 36 kr
+Totalt: 66 kr
+

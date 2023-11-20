@@ -119,7 +119,7 @@ admin.lagg_till_produkt(pasta)
 admin.lagg_till_produkt(kottfars)
 
 # Ändra namn och pris för en produkt
-admin.andra_namn_och_pris("300", "Ekologiska Bananer", 12)
+#admin.andra_namn_och_pris("300", "Ekologiska Bananer", 12)
 
 # Huvudloopen för programmet
 while True:
